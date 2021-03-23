@@ -1,10 +1,10 @@
-# ‰ŠúƒZƒbƒgƒAƒbƒv
+# åˆæœŸã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 
 ## Next.js
 
-npx create-next-app . 
+npx create-next-app .
 
-## •K—v module ‚ÌƒCƒ“ƒXƒg[ƒ‹
+## å¿…è¦ module ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
 ```
 yarn add classcat eslint eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-simple-import-sort eslint-plugin-jsx-a11y prettier
@@ -14,16 +14,15 @@ yarn add jest  @testing-library/react @types/jest @testing-library/jest-dom @tes
 ## typescript
 
 ```
-yarn add -D typescript @types/react @types/react-dom @types/node  
+yarn add -D typescript @types/react @types/react-dom @types/node
 ```
 
-## Šg’£q•ÏX
+## æ‹¡å¼µå­å¤‰æ›´
 
-JSX g‚Á‚Ä‚¢‚é‚È‚çŠg’£q‚ğ"tsx"‚É•ÏX‚·‚é  
-g‚Á‚Ä‚¢‚È‚¢ê‡‚Í"ts"‚É•ÏX‚·‚é  
+JSX ä½¿ã£ã¦ã„ã‚‹ãªã‚‰æ‹¡å¼µå­ã‚’"tsx"ã«å¤‰æ›´ã™ã‚‹  
+ä½¿ã£ã¦ã„ãªã„å ´åˆã¯"ts"ã«å¤‰æ›´ã™ã‚‹
 
-
-## srcƒtƒHƒ‹ƒ_ì¬
+## src ãƒ•ã‚©ãƒ«ãƒ€ä½œæˆ
 
 mkdir src
 mv styles ./src
@@ -33,64 +32,62 @@ mkdir components
 mkdir layouts
 cd ..
 
-## ŠJ”­ƒT[ƒo‹N“®
+## é–‹ç™ºã‚µãƒ¼ãƒèµ·å‹•
 
 ```
-yarn dev  
+yarn dev
 ```
 
-## Œ^‚Ì’è‹`
+## å‹ã®å®šç¾©
 
-ƒGƒ‰[‚É‚È‚Á‚½‰ÓŠ‚É‘Î‚µ‚ÄAŒ^‚ğ’è‹`‚·‚é
+ã‚¨ãƒ©ãƒ¼ã«ãªã£ãŸç®‡æ‰€ã«å¯¾ã—ã¦ã€å‹ã‚’å®šç¾©ã™ã‚‹
 
-## package.json ‚É jest ‚Ìİ’è‚ğ’Ç‹L
+## package.json ã« jest ã®è¨­å®šã‚’è¿½è¨˜
 
-Ejest‚ğg‚Á‚ÄƒeƒXƒg‚·‚éÛ‚ÉA–³‹‚·‚éƒtƒ@ƒCƒ‹‚Í‰½‚©‚ğİ’è‚·‚é
-Ejestcssƒ‚ƒWƒ…[ƒ‹‚ğg‚Á‚Äƒ‚ƒbƒLƒ“ƒO‚·‚é
+ãƒ»jest ã‚’ä½¿ã£ã¦ãƒ†ã‚¹ãƒˆã™ã‚‹éš›ã«ã€ç„¡è¦–ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã¯ä½•ã‹ã‚’è¨­å®šã™ã‚‹
+ãƒ»jestcss ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’ä½¿ã£ã¦ãƒ¢ãƒƒã‚­ãƒ³ã‚°ã™ã‚‹
 
 ```
-"jest": { 
+"jest": {
 "testPathIgnorePatterns": [
  "<rootDir>/.next/",
- "<rootDir>/node_modules/" ], 
+ "<rootDir>/node_modules/" ],
 "moduleNameMapper": {
- "\\.(css)$": "<rootDir>/node_modules/jest-css-modules" 
- } 
+ "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+ }
 }
 ```
 
-##  package.json‚É test script‚ğ’Ç‹L
+## package.json ã« test script ã‚’è¿½è¨˜
 
-ƒ^[ƒ~ƒiƒ‹‚©‚çyarn test‚Åjest‚ğÀs‚·‚é‚±‚Æ‚ª‚Å‚«‚é
+ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã‹ã‚‰ yarn test ã§ jest ã‚’å®Ÿè¡Œã™ã‚‹ã“ã¨ãŒã§ãã‚‹
 
 ```
-"scripts": { 
-"test": "jest --env=jsdom --verbose" 
+"scripts": {
+"test": "jest --env=jsdom --verbose"
 },
 ```
 
+## Tailwind CSS ã®å°å…¥
 
-
-#Tailwind CSS ‚Ì“±“ü
 https://tailwindcss.com/docs/guides/nextjs
 
-
-## •K—vmodule‚ÌƒCƒ“ƒXƒg[ƒ‹
+## å¿…è¦ module ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
 ```
 yarn add tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-## tailwind.config.js, postcss.config.js‚Ì¶¬
+## tailwind.config.js, postcss.config.js ã®ç”Ÿæˆ
 
 ```
 npx tailwindcss init -p
 ```
 
-## tailwind.config.js‚Ìpurgeİ’è’Ç‰Á
+## tailwind.config.js ã® purge è¨­å®šè¿½åŠ 
 
-purge‚Éİ’è‚ğ’Ç‹L
-w’è‚µ‚½tsxƒtƒ@ƒCƒ‹‚Ì’†g‚ğtailwind‚©‚çcss‚É•ÏŠ·‚·‚éİ’è‚ğ“ü‚ê‚é
+purge ã«è¨­å®šã‚’è¿½è¨˜
+æŒ‡å®šã—ãŸ tsx ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¸­èº«ã‚’ tailwind ã‹ã‚‰ css ã«å¤‰æ›ã™ã‚‹è¨­å®šã‚’å…¥ã‚Œã‚‹
 
 ```
 module.exports = {
@@ -100,15 +97,16 @@ darkMode: false,
 theme: {
   extend: {},
  },
- variants: { 
-   extend: {}, 
+ variants: {
+   extend: {},
 },
-plugins: [], 
+plugins: [],
 }
 ```
 
-## globals.css‚Ì•ÒW
-/styles/global.css‚ğ‘‚«Š·‚¦‚é
+## globals.css ã®ç·¨é›†
+
+/styles/global.css ã‚’æ›¸ãæ›ãˆã‚‹
 
 ```
 @tailwind base;
@@ -116,33 +114,30 @@ plugins: [],
 @tailwind utilities;
 ```
 
+## index.tsx ã®ç·¨é›†
 
-## index.tsx‚Ì•ÒW
-
-index.tsx‚ğ‰º‹L‚Ì‚Æ‚¨‚è‚É’u‚«Š·‚¦‚éB
-className‚ÅƒXƒ^ƒCƒ‹‚ğ“–‚Ä‚Ä‚¢‚­
-Œ³X‚ ‚Á‚½Home.module.css‚Ííœ‚µ‚Ä‚¨‚­
+index.tsx ã‚’ä¸‹è¨˜ã®ã¨ãŠã‚Šã«ç½®ãæ›ãˆã‚‹ã€‚
+className ã§ã‚¹ã‚¿ã‚¤ãƒ«ã‚’å½“ã¦ã¦ã„ã
+å…ƒã€…ã‚ã£ãŸ Home.module.css ã¯å‰Šé™¤ã—ã¦ãŠã
 
 ```
 const Home: React.FC = () => {
 return (
  <div className="flex justify-center items-center flex-col min-h-screen font-mono">
 Hello Nextjs
-</div> 
-) } 
+</div>
+) }
 export default Home
 ```
 
-
-## ŠJ”­ƒT[ƒo‹N“®
+## é–‹ç™ºã‚µãƒ¼ãƒèµ·å‹•
 
 ```
 yarn dev
 ```
 
-## ƒrƒ‹ƒh‚·‚é
+## ãƒ“ãƒ«ãƒ‰ã™ã‚‹
 
 ```
 yarn build
 ```
-
