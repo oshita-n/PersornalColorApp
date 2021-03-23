@@ -2,7 +2,9 @@
 
 ## Next.js
 
+```
 npx create-next-app .
+```
 
 ## 必要 module のインストール
 
@@ -10,6 +12,14 @@ npx create-next-app .
 yarn add classcat eslint eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-simple-import-sort eslint-plugin-jsx-a11y prettier
 yarn add jest  @testing-library/react @types/jest @testing-library/jest-dom @testing-library/dom babel-jest @testing-library/user-event jest-css-modules msw
 ```
+
+windows の場合は、
+
+```
+powershell -ExecutionPolicy RemoteSigned yarn xxx
+```
+
+と yarn の前に記述する
 
 ## typescript
 
@@ -24,6 +34,7 @@ JSX 使っているなら拡張子を"tsx"に変更する
 
 ## src フォルダ作成
 
+```
 mkdir src
 mv styles ./src
 mv pages ./src
@@ -31,6 +42,7 @@ cd src
 mkdir components
 mkdir layouts
 cd ..
+```
 
 ## 開発サーバ起動
 
@@ -75,7 +87,7 @@ https://tailwindcss.com/docs/guides/nextjs
 ## 必要 module のインストール
 
 ```
-yarn add tailwindcss@latest postcss@latest autoprefixer@latest
+yarn add tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/line-clamp
 ```
 
 ## tailwind.config.js, postcss.config.js の生成
