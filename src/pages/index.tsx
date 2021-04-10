@@ -1,8 +1,9 @@
+import { NextPage } from "next";
 import { Divider } from "../components/shared/Divider";
 import { Spring } from "../components/shared/Spring";
 import { MainLayouts } from "../layouts/MainLayouts";
 
-const Home: React.FC = () => {
+const Home: NextPage = () => {
   return (
     <div>
       <MainLayouts title="Top">
