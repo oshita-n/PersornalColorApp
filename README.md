@@ -88,6 +88,7 @@ https://tailwindcss.com/docs/guides/nextjs
 
 ```
 yarn add tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/line-clamp
+yarn add @headlessui/react
 ```
 
 ## tailwind.config.js, postcss.config.js の生成
