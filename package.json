@@ -9,6 +9,7 @@
     "test": "jest --env=jsdom --verbose"
   },
   "dependencies": {
+    "@headlessui/react": "^1.0.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@testing-library/dom": "^7.30.0",
     "@testing-library/jest-dom": "^5.11.9",
