@@ -16,14 +16,17 @@ type SeasonNameListType = {
   winter: SeasonNameType,
 }
 
-export const Season: VFC<Props> = (props) => {
+const SeasonName = (typeName: "spring" | "summer" | "autumn" | "winter", langName: "ja" | "en"): String => {
   const SeasonNameList: SeasonNameListType = {
     spring: { ja: "春", en: "Spring" },
     summer: { ja: "夏", en: "Summer" },
     autumn: { ja: "秋", en: "Autumn" },
     winter: { ja: "冬", en: "Winter" },
   };
-  const SeasonName: SeasonNameType = SeasonNameList[props.type];
+  return SeasonNameList[typeName][langName];
+}
+
+export const Season: VFC<Props> = (props) => {
   return (
     <div
       className={cc([
@@ -37,8 +40,8 @@ export const Season: VFC<Props> = (props) => {
         props.className,
       ])}
     >
-      <span>{SeasonName["ja"]}</span>
-      <span>{SeasonName["en"]}</span>
+      <span>{SeasonName(props.type, "ja")}</span>
+      <span>{SeasonName(props.type, "en")}</span>
     </div>
   );
 };
