@@ -5,12 +5,11 @@ type Props = {
   className?: string;
   type?: "spring" | "summer" | "autumn" | "winter";
 };
-
-interface SeasonNameType {
+type SeasonNameType = {
   ja: string,
   en: string
 }
-interface SeasonNameListType {
+type SeasonNameListType = {
   spring: SeasonNameType,
   summer: SeasonNameType,
   autumn: SeasonNameType,
