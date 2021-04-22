@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import { Divider } from "../components/shared/Divider";
-import { Spring } from "../components/shared/Spring";
 import { Season } from "../components/shared/Season";
 import { MainLayouts } from "../layouts/MainLayouts";
 
