@@ -17,12 +17,14 @@ export const colorResult: NextPage = () => {
           <Divider />
           <div className="flex flex-col items-center w-72 h-24 my-4 space-y-3">
             <Button button className="w-full bg-gray-400">ライブラリに保存</Button>
-            <Button button className="w-full bg-gray-400">他の似合う色を見る</Button>
+            {false ? <div className="w-full" style={{ height: "42px" }}> </div> :
+              <Button button className="w-full bg-gray-400">他の似合う色を見る</Button>
+            }
             <Button button className="w-full bg-gray-400">続けて洋服の写真を撮る</Button>
           </div>
         </div>
       </MainLayouts>
-    </div>
+    </div >
   );
 };
 
