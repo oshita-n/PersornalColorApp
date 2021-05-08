@@ -6,7 +6,10 @@ import React, { useState } from 'react';
 
 const question: NextPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
-  return (
+    
+    const currentPageCounter =() => {console.log(currentPage); if (currentPage < 4) { setCurrentPage(currentPage+ 1) } } ;
+
+    return (
   <div>
     <MainLayouts title="Top">
         <div className="flex flex-col items-center">
@@ -14,12 +17,11 @@ const question: NextPage = () => {
           <div className="w-72 h-24 my-4  bg-yellow-200">画像を張る</div>
           <div className="flex flex-col my-4">
           <div className="flex space-x-10">
-          <Button href="#" bgColor = "white" textColor = "black" className = "w-32"
-          onClick={ () => setCurrentPage(currentPage+ 1)}>
-          Yes</Button> 
-          <Button href="#" bgColor = "gray" textColor = "white"  className = "w-32"
-          onClick={() => setCurrentPage(currentPage+ 1)}> 
-          No</Button> 
+
+          <Button button bgColor = "white" textColor = "black" className = "w-32"
+          onClick = {currentPageCounter}> Yes</Button> 
+          <Button button bgColor = "gray" textColor = "white"  className = "w-32"
+          onClick = {currentPageCounter}> No </Button>
           </div>
           </div>
           <Divider />
