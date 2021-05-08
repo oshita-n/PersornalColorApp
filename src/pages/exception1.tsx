@@ -4,21 +4,25 @@ import { Button } from "../components/shared/Button";
 import { MainLayouts } from "../layouts/MainLayouts";
 
 
-export const exeption1: NextPage = () => {
+export const exception1: NextPage = () => {
   return (
     <div>
       <MainLayouts title="top">
-        <div className="flex justify-center">
-          <img src="exception.png" />
-        </div>
-        <Divider/>
-        <Divider/>
-        <div className="flex justify-center">
-          <Button button>続けて洋服の写真を撮る</Button>
+          <div className="flex flex-col items-center">
+            <div>
+              <img src="exception.png" />
+            </div>
+            <div>
+              <p>他の洋服の色を撮影してお試しください</p>  
+            </div>
+            <Divider/>
+            <div>
+              <Button button className="mt-8 mb-10">続けて洋服の写真を撮る</Button>
+            </div>
           </div>
       </MainLayouts>
     </div>
   );
 };
 
-export default exeption1;
+export default exception1;
