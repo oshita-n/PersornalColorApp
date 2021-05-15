@@ -9,10 +9,11 @@ export const colorResult: NextPage = () => {
     <div>
       <MainLayouts title="Top">
         <div className="flex flex-col items-center">
-          <FittingColor bgColor="#b0cde5" bodyColor="#67a8dd" >
+          <div className="flex flex-col justify-center items-center h-16 -mt-6 p-0">
             <span>この洋服の色はサマーです</span>
             <span>あなたに似合っています！</span>
-          </FittingColor>
+          </div>
+          <FittingColor bgColor="#b0cde5" bodyColor="#67a8dd" />
           <Divider />
           <div className="flex flex-col items-center w-72 h-24 my-4 space-y-3">
             <Button button className="w-full bg-gray-400">ライブラリに保存</Button>

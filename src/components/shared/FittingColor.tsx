@@ -10,12 +10,9 @@ type Props = {
 };
 
 export const FittingColor: VFC<Props> = (props) => {
-  const { className, bgColor, bodyColor, imageLink, children } = props;
+  const { className, bgColor, bodyColor, imageLink } = props;
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col justify-center items-center h-16 -mt-6 p-0">
-        {children}
-      </div>
       <div
         style={{ backgroundColor: bgColor }}
         className={cc([
@@ -41,4 +38,3 @@ FittingColor.defaultProps = {
   imageLink: 'https://image-more.hpplus.jp/upload/be3/be3e336c18af51864659bd48c2ca02be.jpg',
   bodyColor: '#C0C0C0',
 };
-export default FittingColor;
