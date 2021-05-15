@@ -40,7 +40,7 @@ export const avatorTemplate: NextPage = () => {
     <div>
       <MainLayouts title="top">
         <div className="flex flex-col items-center">
-          <FittingColor bgColor="#b0cde5" bodyColor="#67a8dd" />
+          <FittingColor bgColor="#b0cde5" bodyColor="#67a8dd" imageLink={ image }/>
           <p>あなたの顔が認識されました</p>
           <Divider/>
           <div>
@@ -143,14 +143,14 @@ export const avatorTemplate: NextPage = () => {
                       className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                       onClick={capture}
                     >
-                      Take a picture！
+                    撮影
                   </button>
                   <button
                     type="button"
                     className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
-                    Got it, thanks!
+                    閉じる
                   </button>
                 </div>
               </div>
