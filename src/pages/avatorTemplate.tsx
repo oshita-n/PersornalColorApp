@@ -38,21 +38,12 @@ export const avatorTemplate: NextPage = () => {
                     <Menu.Item>
                       {({ active }) => (
                         <button
-                          className={`${
-                            active ? 'text-gray-900' : 'text-gray-900'
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          className="text-gray-900 flex rounded-md items-center w-full px-2 py-2 text-sm"
                         >
-                          {active ? (
                             <CameraIcon
                               className="w-5 h-5 mr-2"
                               aria-hidden="true"
                             />
-                          ) : (
-                            <CameraIcon
-                              className="w-5 h-5 mr-2"
-                              aria-hidden="true"
-                            />
-                          )}
                           写真を撮る
                         </button>
                       )}
@@ -60,21 +51,12 @@ export const avatorTemplate: NextPage = () => {
                     <Menu.Item>
                       {({ active }) => (
                         <button
-                          className={`${
-                            active ? 'text-gray-900' : 'text-gray-900'
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          className="text-gray-900 flex rounded-md items-center w-full px-2 py-2 text-sm"
                         >
-                          {active ? (
                             <PhotographIcon
                               className="w-5 h-5 mr-2"
                               aria-hidden="true"
                             />
-                          ) : (
-                            <PhotographIcon
-                              className="w-5 h-5 mr-2"
-                              aria-hidden="true"
-                            />
-                          )}
                           フォトライブラリ
                         </button>
                       )}
