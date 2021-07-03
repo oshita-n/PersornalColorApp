@@ -3,21 +3,25 @@ import { MainLayouts } from '../layouts/MainLayouts';
 import { Button } from '../components/shared/Button';
 import { Divider } from '../components/shared/Divider';
 import React, { useState } from 'react';
-import questionResult from './questionResult';
 import { useRouter } from 'next/router';
 
 const question: NextPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const router = useRouter();
   const currentPageCounter = () => {
-    console.log(currentPage);
     if (currentPage < 4) {
       setCurrentPage(currentPage + 1);
     } else {
       router.push('/questionResult');
     }
   };
-
+  // const diagnosis = [
+  //   {  diagnosisText: "唇の色は赤色とオレンジの場合、赤色に近い"
+  //     answerOptions: [
+  //       {}
+  //   ],
+  // },
+  // ]
   return (
     <div>
       <MainLayouts title='Top'>
@@ -33,7 +37,6 @@ const question: NextPage = () => {
                 className='w-32'
                 onClick={currentPageCounter}
               >
-                {' '}
                 Yes
               </Button>
               <Button
@@ -43,8 +46,7 @@ const question: NextPage = () => {
                 className='w-32'
                 onClick={currentPageCounter}
               >
-                {' '}
-                No{' '}
+                No
               </Button>
             </div>
           </div>
