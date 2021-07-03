@@ -30,7 +30,7 @@ export const Button: VFC<ButtonType> = (props) => {
   ]);
 
   return (
-    <button className={classes}>
+    <button className={classes} onClick={props.onClick} >
       <strong>{props.children}</strong>
     </button>
   );
